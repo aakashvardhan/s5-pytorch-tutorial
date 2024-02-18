@@ -1,7 +1,6 @@
 # Importing packages & libraries from PyTorch
 import torch
-import torch.nn as nn
-import torch.optim as optim
+
 
 # Importing tqdm for progress bar visualization during loops
 from tqdm import tqdm
@@ -80,3 +79,18 @@ def test(model, device, test_loader, criterion):
 
     # Print test set results
     print(f'Test set: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({100. * correct / len(test_loader.dataset):.2f}%)')
+    
+    
+    
+def plot_accuracy_loss_graphs():
+    fig, axs = plt.subplots(2,2,figsize=(15,10))
+    axs[0, 0].plot(train_losses)
+    axs[0, 0].set_title("Training Loss")
+    axs[1, 0].plot(train_acc)
+    axs[1, 0].set_title("Training Accuracy")
+    axs[0, 1].plot(test_losses)
+    axs[0, 1].set_title("Test Loss")
+    axs[1, 1].plot(test_acc)
+    axs[1, 1].set_title("Test Accuracy")
+    
+    
