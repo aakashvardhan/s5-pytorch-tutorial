@@ -172,4 +172,16 @@ Test set: Average loss: 0.0000, Accuracy: 9934/10000 (99.34%)
 Adjusting learning rate of group 0 to 1.0000e-03.
 ```
 
+The model achieves an accuracy of 99.34% on the testing dataset after 20 epochs of training. The loss and accuracy plots for the training and testing datasets are shown below:
+
+![Loss and Accuracy Plots](https://github.com/aakashvardhan/s5-pytorch-tutorial/blob/main/loss_acc_graph.png)
+
+The loss decreases and the accuracy increases with each epoch, indicating that the model is learning to classify the digits effectively. The testing accuracy plateaus around 99.34% after 20 epochs, indicating that the model has converged and is performing well on the testing dataset.
+
+## Conclusion
+
+In this tutorial, we learned how to build, train, and evaluate a Convolutional Neural Network model for digit classification using the MNIST dataset. We also visualized the loss and accuracy plots to understand the model's performance during training and testing. The model achieved an accuracy of 99.34% on the testing dataset, demonstrating its effectiveness in classifying handwritten digits.
+
+
+
 
