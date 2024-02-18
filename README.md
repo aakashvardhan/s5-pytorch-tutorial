@@ -96,3 +96,13 @@ train_loader = torch.utils.data.DataLoader(train_data, **kwargs)
 
 `transforms.ToTensor` and `transforms.Normalize` are applied to the testing dataset without the data augmentation steps (like random cropping and rotation). This is because, during testing, we evaluate the model's performance on unaltered images to simulate real-world application. The normalization parameters (mean: 0.1407, standard deviation: 0.4081) for the testing set might be slightly different, which could be an oversight or intentionally adjusted based on the testing set distribution. However, it's generally recommended to use the same normalization parameters for both training and testing datasets for consistency.
 
+## Train the Model
+
+We will train the CNN model using the training dataset. The training process involves the following steps:
+- Forward pass: The input image is fed into the Convolutional Neural Network model, and the predicted output is computed.
+- Loss computation: The difference between the predicted output and the actual target is computed using the negative log-likelihood loss function.
+- Backward pass: The gradients of the loss with respect to the model parameters are computed using backpropagation.
+- Optimization: The model parameters are updated using Stochastic Gradient Descent to minimize the loss.
+
+
+
