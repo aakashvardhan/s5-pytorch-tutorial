@@ -135,4 +135,41 @@ Estimated Total Size (MB): 2.94
 ----------------------------------------------------------------
 ```
 
+The CNN model consists of 593,200 parameters, which are learned during the training process. The model is trained using the MNIST dataset and achieves an accuracy of 99.34% on the testing dataset.
+
+## Loss and Accuracy Plots
+
+```
+Adjusting learning rate of group 0 to 1.0000e-02.
+Epoch 1
+Train: Loss=0.8040 Batch_id=117 Accuracy=32.28: 100%|██████████| 118/118 [00:30<00:00,  3.91it/s]
+Test set: Average loss: 0.0017, Accuracy: 7098/10000 (70.98%)
+Adjusting learning rate of group 0 to 1.0000e-02.
+Epoch 2
+Train: Loss=0.1180 Batch_id=117 Accuracy=88.46: 100%|██████████| 118/118 [00:20<00:00,  5.62it/s]
+Test set: Average loss: 0.0003, Accuracy: 9655/10000 (96.55%)
+Adjusting learning rate of group 0 to 1.0000e-02.
+Epoch 3
+Train: Loss=0.1310 Batch_id=117 Accuracy=95.69: 100%|██████████| 118/118 [00:19<00:00,  5.94it/s]
+Test set: Average loss: 0.0002, Accuracy: 9776/10000 (97.76%)
+Adjusting learning rate of group 0 to 1.0000e-02.
+
+......
+......
+......
+
+Epoch 18
+Train: Loss=0.0050 Batch_id=117 Accuracy=99.10: 100%|██████████| 118/118 [00:21<00:00,  5.55it/s]
+Test set: Average loss: 0.0000, Accuracy: 9933/10000 (99.33%)
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch 19
+Train: Loss=0.0343 Batch_id=117 Accuracy=99.08: 100%|██████████| 118/118 [00:21<00:00,  5.53it/s]
+Test set: Average loss: 0.0000, Accuracy: 9932/10000 (99.32%)
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch 20
+Train: Loss=0.0285 Batch_id=117 Accuracy=99.05: 100%|██████████| 118/118 [00:21<00:00,  5.55it/s]
+Test set: Average loss: 0.0000, Accuracy: 9934/10000 (99.34%)
+Adjusting learning rate of group 0 to 1.0000e-03.
+```
+
 
